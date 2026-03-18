@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hjemmeopgaver1/Hjemmeopgaver1.iml" filepath="$PROJECT_DIR$/Hjemmeopgaver1/Hjemmeopgaver1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L01 Java intro/L01 Java intro.iml" filepath="$PROJECT_DIR$/L01 Java intro/L01 Java intro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L02 Java/L02 Java.iml" filepath="$PROJECT_DIR$/L02 Java/L02 Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L03 Java/L03 Java.iml" filepath="$PROJECT_DIR$/L03 Java/L03 Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L04 Java/L04 Metode.iml" filepath="$PROJECT_DIR$/L04 Java/L04 Metode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L05 Java/L05 While.iml" filepath="$PROJECT_DIR$/L05 Java/L05 While.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L06 for loops/L06 for loops.iml" filepath="$PROJECT_DIR$/L06 for loops/L06 for loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L07 Arrays/L07 Arrays.iml" filepath="$PROJECT_DIR$/L07 Arrays/L07 Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L07 Arrays/src/L07Opgaver/L07Opgaver.iml" filepath="$PROJECT_DIR$/L07 Arrays/src/L07Opgaver/L07Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L08 Objects/L08 Objects.iml" filepath="$PROJECT_DIR$/L08 Objects/L08 Objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L09 Klasser/L09 Klasser.iml" filepath="$PROJECT_DIR$/L09 Klasser/L09 Klasser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L10 Opsamling/L10 Opsamling.iml" filepath="$PROJECT_DIR$/L10 Opsamling/L10 Opsamling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13 StringKlasserObjekter/L13 StringKlasserObjekter.iml" filepath="$PROJECT_DIR$/L13 StringKlasserObjekter/L13 StringKlasserObjekter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L14 ArrayList/L14 ArrayList.iml" filepath="$PROJECT_DIR$/L14 ArrayList/L14 ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L15 Enkeltrettede associeringer/L15 Enkeltrettede associeringer.iml" filepath="$PROJECT_DIR$/L15 Enkeltrettede associeringer/L15 Enkeltrettede associeringer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L16 Projekt klasser og objekter/L16 Projekt klasser og objekter.iml" filepath="$PROJECT_DIR$/L16 Projekt klasser og objekter/L16 Projekt klasser og objekter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L06 for loops/Opgaver/Opgaver.iml" filepath="$PROJECT_DIR$/L06 for loops/Opgaver/Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRO1-Java.iml" filepath="$PROJECT_DIR$/PRO1-Java.iml" />
+    </modules>
+  </component>
+</project>
