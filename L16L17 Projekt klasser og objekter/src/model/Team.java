@@ -61,7 +61,6 @@ public class Team {
             if (student.isActive()) {
                 activeStudentNames[index] = student.getName();
                 index++;
-
             }
         return activeStudentNames;
 

@@ -82,7 +82,11 @@ public class App {
                                         IO.println("ERROR: INVALID INPUT");
                                         IO.println();
                                     }
+
                                 }
+                            } if (!found) {
+                                IO.println("ERROR: TEAM NOT FOUND");
+                                IO.println();
                             }
                         }
                     }
@@ -204,7 +208,6 @@ public class App {
                     IO.println("Program finished.");
                     finished = true;
                 }
-
                 default -> {
                     IO.println("ERROR: INVALID INPUT. TRY AGAIN!");
                     IO.println();

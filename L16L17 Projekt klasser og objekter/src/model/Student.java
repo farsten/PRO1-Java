@@ -71,11 +71,11 @@ public class Student {
     }
 
     public double averageGrade() {
-        double average = 0;
+        double sum = 0;
         for (double grade : grades) {
-            average += grade;
+            sum += grade;
         }
-        return average / grades.length;
+        return sum / grades.length;
     }
 
     public int correctAnswerCount() {

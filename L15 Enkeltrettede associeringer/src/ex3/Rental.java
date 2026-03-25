@@ -1,12 +1,13 @@
 package ex3;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Rental {
     private int no;
     private String date;
     private int days;
-    private Car car;
-
-
+    private ArrayList<Car> cars = new ArrayList<>();
 
     public Rental(int no, String date, int days) {
         this.no = no;
@@ -14,9 +15,16 @@ public class Rental {
         this.days = days;
     }
 
+    public void addCar(Car car) {
+        cars.add(car);
+    }
 
-    public void setCar(Car car) {
-        this.car = car;
+    public void removeCar(Car car) {
+        cars.remove(car);
+    }
+
+    public ArrayList<Car> getCars() {
+        return cars;
     }
 
     public int getNo() {
@@ -27,7 +35,11 @@ public class Rental {
         return date;
     }
     public int getPrice() {
-        return car.getPricePerDay() * this.days;
+        int totalPrice = 0;
+        for (Car car : cars) {
+            totalPrice += car.getPricePerDay() * this.days;
+        }
+        return totalPrice;
     }
 
 

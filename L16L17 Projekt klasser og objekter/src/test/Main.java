@@ -15,7 +15,7 @@ public class Main {
         Student y2 = new Student("Ulla", true, gradeS1);
         Student y3 = new Student("Per", false, gradeS1);
 
-        Team t1 = new Team("25V", "A1.32");
+        Team t1 = new Team("26V", "A1.32");
 
         t1.addStudent(y1);
         t1.addStudent(y2);
@@ -25,7 +25,7 @@ public class Main {
         Student v2 = new Student("Anna", true, gradeS1);
         Student v3 = new Student("Leo", false, gradeS1);
 
-        Team t2 = new Team("25Y", "A1.28");
+        Team t2 = new Team("26Y", "A1.28");
 
         t2.addStudent(v1);
         t2.addStudent(v2);
@@ -47,7 +47,7 @@ public class Main {
         for (Team t : teams) { // får hvert studerendes svar:
             for (Student student : t.getStudents()) {
                 student.setAnswers(MultipleChoiceTest.generateAnswers());
-                IO.println(Arrays.toString(student.getAnswers()));
+                IO.println(student.getName() + ": " + Arrays.toString(student.getAnswers()));
             }
         }
 
