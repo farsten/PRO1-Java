@@ -1,29 +1,19 @@
 package Opgave5AllIndices;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
 public class Main {
     void main() {
+        Scanner scanner = new Scanner(IO.readln("Skriv en sætning: "));
+        String sentence = scanner.nextLine();
 
-        ArrayList<String> arr = new ArrayList<>();
-        arr.add("Abe");
-        arr.add("Bob");
-        arr.add("Carl");
-        arr.add("Tony");
-        arr.add("John");
-        arr.add("Julie");
-        arr.add("Karl");
-        arr.add("Larry");
-        arr.add("Michael");
-        arr.add("Robin");
-        arr.add("Sam");
-        arr.add("Sally");
-        arr.add("Tony");
-        arr.add("Tony");
-        arr.add("Tony");
-        arr.add("Tony");
+        String[] words = sentence.split(" "); // splitter hvert ord
+        ArrayList<String> wordsList = new ArrayList<>();
+        Collections.addAll(wordsList, words); //tilføjer hvert ord fra arrayen til arraylisten
 
-        IO.println(findAllIndices(arr, "Tony"));
+        IO.println(findAllIndices(wordsList, "jeg"));
 
     }
 
@@ -31,7 +21,7 @@ public class Main {
         ArrayList<Integer> arrNumber = new ArrayList<>();
 
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).equals(target)) {
+            if (list.get(i).equalsIgnoreCase(target)) {
                 arrNumber.add(i);
             }
         }

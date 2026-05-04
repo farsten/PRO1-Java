@@ -17,12 +17,8 @@ public class test {
 
         ArrayList<Player> players = new ArrayList<>(List.of(p1, p2, p3, p4, p5, p6, p7));
 
-        players.sort(new Comparator<Player>() { // sorterer arraylist "players" ift deres mål i DESC ORDER
-            @Override
-            public int compare(Player p1, Player p2) {
-                return Integer.compare(p2.getScoredGoals(), p1.getScoredGoals());
-            }
-        });
+        players.sort(Comparator.comparingInt(Player::getScoredGoals).reversed());
+
         IO.println("A: " + findPlayerLinear(players, 10));
         IO.println("B: " + findPlayerBinary(players, 10));
         IO.println("C: " + findPlayerName(players));
