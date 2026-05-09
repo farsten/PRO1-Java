@@ -3,6 +3,7 @@ package test.model;
 import org.jspecify.annotations.NullMarked;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 @NullMarked
 public class Deltager {
@@ -17,6 +18,7 @@ public class Deltager {
     private final LocalDate afrejseDato;
     private final boolean erForedragsHolder;
     private final DeltagerType deltagerType;
+    private final ArrayList<Reservation> reservationer;
 
 
     public Deltager(String navn, String adresse,
@@ -32,6 +34,7 @@ public class Deltager {
         this.afrejseDato = afrejseDato;
         this.erForedragsHolder = erForedragsHolder;
         this.deltagerType = deltagerType;
+        this.reservationer = new ArrayList<>();
         firmaNavn = "";
         firmaTlf = "";
     }
@@ -86,5 +89,9 @@ public class Deltager {
 
     public DeltagerType getDeltagerType() {
         return deltagerType;
+    }
+
+    public ArrayList<Reservation> getReservationer() {
+        return reservationer;
     }
 }

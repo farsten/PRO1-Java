@@ -14,6 +14,8 @@ public class Konference {
     private final LocalDate slutDato;
     private final int maxAntal;
     private final ArrayList<Udflugt> udflugter;
+    private final ArrayList<Reservation> reservationer;
+    private final ArrayList<Hotel> hoteller;
 
     public Konference(String navn, String adresse, double pris, LocalDate startDato, LocalDate slutDato, int maxAntal) {
         this.navn = navn;
@@ -23,10 +25,15 @@ public class Konference {
         this.slutDato = slutDato;
         this.maxAntal = maxAntal;
         this.udflugter = new ArrayList<>();
+        this.reservationer = new ArrayList<>();
+        this.hoteller = new ArrayList<>();
     }
 
     public void addUdflugt(Udflugt udflugt) {
         udflugter.add(udflugt);
+    }
+    public void removeUdflugt(Udflugt udflugt) {
+        udflugter.remove(udflugt);
     }
 
     public String getNavn() {
@@ -55,5 +62,12 @@ public class Konference {
 
     public ArrayList<Udflugt> getUdflugter() {
         return udflugter;
+    }
+
+    public ArrayList<Reservation> getReservationer() {
+        return reservationer;
+    }
+    public  ArrayList<Hotel> getHoteller() {
+        return hoteller;
     }
 }

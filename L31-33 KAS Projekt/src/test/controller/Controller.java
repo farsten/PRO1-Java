@@ -1,5 +1,6 @@
 package test.controller;
 
+
 import test.model.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -40,13 +41,10 @@ public class Controller {
 
     //Reservation, selve tilmeldingen
     public static Reservation opretReservation(LocalDate start, LocalDate slut, VærelsesType type,
-                                        Deltager deltager, Konference konference,
+                                        Deltager deltager, Ledsager ledsager, Konference konference,
                                         Hotel hotel, ArrayList<EkstraService> valgteEkstraService, ArrayList<Udflugt> valgteUdflugter) {
 
-        Reservation reservation = new Reservation(start, slut, type);
-        reservation.addDeltager(deltager);
-        reservation.addKonference(konference);
-
+        Reservation reservation = new Reservation(deltager, ledsager, konference, start, slut, type);
 
         if (hotel != null) {
             reservation.addHotel(hotel);
@@ -56,15 +54,11 @@ public class Controller {
                 reservation.addEkstraService(ekstraService);
             }
         }
-        if (valgteUdflugter != null) {
+        if (ledsager != null && valgteUdflugter != null) {
             for (Udflugt udflugt : valgteUdflugter) {
-                reservation.addUdflugt(udflugt);
+                ledsager.getUdflugter().add(udflugt);
             }
         }
-
-
-
-
         return reservation;
     }
 
@@ -76,9 +70,7 @@ public class Controller {
     }
 
     //Ledsager
-    public static Ledsager createLedsager(Reservation reservation, String navn) {
-        Ledsager ledsager = new Ledsager(navn);
-        reservation.addLedsager(ledsager);
-        return ledsager;
+    public static Ledsager createLedsager(String navn) {
+        return new Ledsager(navn);
     }
 }

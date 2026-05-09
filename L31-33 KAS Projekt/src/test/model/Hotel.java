@@ -6,10 +6,11 @@ import java.util.ArrayList;
 
 @NullMarked
 public class Hotel {
-    private String navn;
+    private final String navn;
     private final ArrayList<EkstraService> ekstraServices;
-    private double enkeltsengPris;
-    private double dobbeltsengPris;
+    private final double enkeltsengPris;
+    private final double dobbeltsengPris;
+
 
     public Hotel(String navn, double enkeltsengPris, double dobbeltsengPris) {
         this.navn = navn;

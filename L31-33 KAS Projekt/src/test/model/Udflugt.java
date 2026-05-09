@@ -6,10 +6,9 @@ import java.time.LocalDate;
 
 @NullMarked
 public class Udflugt {
-    private String navn;
-    private double pris;
-    private LocalDate dag;
-    private boolean isTillaegFrokost;
+    private final String navn;
+    private final double pris;
+    private final LocalDate dag;
 
     public Udflugt(String navn, double pris, LocalDate dag) {
         this.navn = navn;
@@ -19,9 +18,6 @@ public class Udflugt {
     public String getNavn() {
         return navn;
     }
-    public void setIstillaegFrokost(boolean isTillaegFrokost) {
-        this.isTillaegFrokost = isTillaegFrokost;
-    }
 
     public double getPris() {
         return pris;
@@ -29,9 +25,5 @@ public class Udflugt {
 
     public LocalDate getDag() {
         return dag;
-    }
-
-    public boolean isTillaegFrokost() {
-        return isTillaegFrokost;
     }
 }
